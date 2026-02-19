@@ -19,6 +19,8 @@ public class StdDemo {
 		
 		List<Student> data = sdao.getAllStudent();
 		data.forEach(System.out::println);
+		
+		System.out.println("abc");
 
 	}
 
