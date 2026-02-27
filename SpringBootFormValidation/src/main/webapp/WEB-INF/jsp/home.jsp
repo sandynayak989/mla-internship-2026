@@ -8,6 +8,6 @@
 </head>
 <body>
 	<h1>WELCOMEEEEE to spring Boot Validations</h1>
-	<a href="login">Prove you are not a ROBOT!</a>
+	<a href="login">Prove you are not a </a>
 </body>
 </html>
