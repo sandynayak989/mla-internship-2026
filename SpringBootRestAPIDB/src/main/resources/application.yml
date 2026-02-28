@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: SpringBootRestAPIMySQL
+
+  jackson:
+    deserialization:
+      fail-on-null-for-primitives: false
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mlasandy
+    username: root
+    password: root@39
+
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 5
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+
+server:
+  port: 7799
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
+  level:
+    org.hibernate.SQL: debug
+    root: info
+  file:
+    path: logs/
+    name: logs/application.log
