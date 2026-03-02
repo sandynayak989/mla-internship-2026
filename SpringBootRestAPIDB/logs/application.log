@@ -672,3 +672,194 @@ org.hibernate.StaleObjectStateException: Row was already updated or deleted by a
 2026-02-28T15:08:27.495+05:30  INFO 10592 --- [SpringBootRestAPIMySQL] [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-02-28T15:08:27.496+05:30  INFO 10592 --- [SpringBootRestAPIMySQL] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
 2026-02-28T15:08:27.502+05:30  INFO 10592 --- [SpringBootRestAPIMySQL] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-02-28T15:13:48.918+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] c.test.SpringBootRestApidbApplication    : Starting SpringBootRestApidbApplication using Java 25.0.1 with PID 16216 (C:\Users\sandesh.nayak\Desktop\mlajava\SpringBootRestAPIDB\target\classes started by sandesh.nayak in C:\Users\sandesh.nayak\Desktop\mlajava\SpringBootRestAPIDB)
+2026-02-28T15:13:48.922+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] c.test.SpringBootRestApidbApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-28T15:13:48.979+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-28T15:13:48.979+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-28T15:13:50.219+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-28T15:13:50.282+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2026-02-28T15:13:50.828+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7799 (http)
+2026-02-28T15:13:50.842+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-28T15:13:50.843+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-28T15:13:50.925+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1945 ms
+2026-02-28T15:13:51.200+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-28T15:13:51.263+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-28T15:13:51.786+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-28T15:13:51.825+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-28T15:13:52.253+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b91d634
+2026-02-28T15:13:52.255+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-28T15:13:52.314+05:30  WARN 16216 --- [SpringBootRestAPIMySQL] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-28T15:13:52.339+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/mlasandy]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: mlasandy/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-28T15:13:53.265+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-28T15:13:53.323+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T15:13:53.414+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-28T15:13:54.123+05:30  WARN 16216 --- [SpringBootRestAPIMySQL] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-28T15:13:54.789+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-28T15:13:54.893+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7799 (http) with context path '/'
+2026-02-28T15:13:54.906+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [restartedMain] c.test.SpringBootRestApidbApplication    : Started SpringBootRestApidbApplication in 6.462 seconds (process running for 7.884)
+2026-02-28T15:13:54.914+05:30  WARN 16216 --- [SpringBootRestAPIMySQL] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-28T15:13:54.914+05:30  WARN 16216 --- [SpringBootRestAPIMySQL] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-28T15:13:55.718+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-28T15:13:55.718+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-28T15:13:55.720+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-28T15:14:03.864+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 306 ms
+2026-02-28T15:14:17.109+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-6] org.hibernate.SQL                        : select next_val as id_val from customer_seq for update
+2026-02-28T15:14:17.115+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-6] org.hibernate.SQL                        : update customer_seq set next_val= ? where next_val=?
+2026-02-28T15:14:17.164+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-6] org.hibernate.SQL                        : insert into customer (name,id) values (?,?)
+2026-02-28T15:14:37.443+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-8] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:14:49.038+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-9] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0 where c1_0.name=?
+2026-02-28T15:14:56.753+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-1] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0 where c1_0.name=?
+2026-02-28T15:15:19.313+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-3] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:15:39.174+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-4] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0 where c1_0.id=?
+2026-02-28T15:15:39.184+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-4] org.hibernate.SQL                        : update customer set name=? where id=?
+2026-02-28T15:15:45.868+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-6] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0 where c1_0.id=?
+2026-02-28T15:15:45.876+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-6] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0 where c1_0.id=?
+2026-02-28T15:15:45.895+05:30 ERROR 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.ObjectOptimisticLockingFailureException: Row was already updated or deleted by another transaction for entity [com.test.entity.Customer with id '5']] with root cause
+
+org.hibernate.StaleObjectStateException: Row was already updated or deleted by another transaction for entity [com.test.entity.Customer with id '5']
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:434) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.merge(DefaultMergeEventListener.java:192) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.doMerge(DefaultMergeEventListener.java:136) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:120) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:77) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:797) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:782) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362) ~[spring-orm-7.0.5.jar:7.0.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy146.merge(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityHandlerInvocationHandler.invokeMethod(SharedEntityManagerCreator.java:240) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:386) ~[spring-orm-7.0.5.jar:7.0.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy146.merge(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:667) ~[spring-data-jpa-4.0.3.jar:4.0.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:278) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:545) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:290) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:690) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:171) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-4.0.3.jar:4.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166) ~[spring-data-jpa-4.0.3.jar:4.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.5.jar:7.0.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy157.save(Unknown Source) ~[na:na]
+	at com.test.dao.Impl.CustomerDaoImpl.saveCustomer(CustomerDaoImpl.java:22) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.5.jar:7.0.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.5.jar:7.0.5]
+	at com.test.dao.Impl.CustomerDaoImpl$$SpringCGLIB$$0.saveCustomer(<generated>) ~[classes/:na]
+	at com.test.service.impl.CustomerServiceImpl.updateCustomer(CustomerServiceImpl.java:28) ~[classes/:na]
+	at com.test.controller.CustomerController.updateCustomerById(CustomerController.java:72) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:914) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:650) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.5.jar:7.0.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.18.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.5.jar:7.0.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.18.jar:11.0.18]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-02-28T15:16:02.864+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-7] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0 where c1_0.id=?
+2026-02-28T15:16:02.873+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-7] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:16:02.879+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-7] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:16:11.335+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-8] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0 where c1_0.id=?
+2026-02-28T15:16:11.349+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-8] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:16:11.355+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-8] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:16:29.882+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-10] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0 where c1_0.id=?
+2026-02-28T15:16:29.887+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-10] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:16:29.894+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-10] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:16:42.157+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-2] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0 where c1_0.id=?
+2026-02-28T15:16:42.166+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-2] org.hibernate.SQL                        : delete from customer where id=?
+2026-02-28T15:16:42.193+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-2] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:16:42.201+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-2] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:16:55.779+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-5] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0 where c1_0.id=?
+2026-02-28T15:16:55.790+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-5] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:16:55.796+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-5] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:17:17.983+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-6] org.hibernate.SQL                        : select next_val as id_val from customer_seq for update
+2026-02-28T15:17:17.985+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-6] org.hibernate.SQL                        : update customer_seq set next_val= ? where next_val=?
+2026-02-28T15:17:18.015+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-6] org.hibernate.SQL                        : insert into customer (name,id) values (?,?)
+2026-02-28T15:17:28.603+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-8] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:17:43.239+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-10] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0 where c1_0.id=?
+2026-02-28T15:17:43.247+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-10] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:17:43.258+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-10] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:19:12.229+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-2] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0 where c1_0.id=?
+2026-02-28T15:19:12.233+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-2] org.hibernate.SQL                        : delete from customer where id=?
+2026-02-28T15:19:12.260+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-2] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T15:19:12.265+05:30 DEBUG 16216 --- [SpringBootRestAPIMySQL] [http-nio-7799-exec-2] org.hibernate.SQL                        : select c1_0.id,c1_0.name from customer c1_0
+2026-02-28T17:52:31.480+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [RMI TCP Connection(170)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-02-28T17:52:31.500+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [RMI TCP Connection(170)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-28T17:52:31.511+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-28T17:52:31.537+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [RMI TCP Connection(170)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T17:52:31.553+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [RMI TCP Connection(170)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-28T17:52:31.564+05:30  INFO 16216 --- [SpringBootRestAPIMySQL] [RMI TCP Connection(170)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
