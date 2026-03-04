@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @EnableMethodSecurity
 public class UserController {
-	
+
 	@GetMapping("/")
+	//@PreAuthorize("hasRole('ROLE_ADMIN')")
 	public String homePage() {
 		return "index";
 	}
@@ -20,31 +21,31 @@ public class UserController {
 		return "login";
 	}
 	
-	@GetMapping("/read")
+	@GetMapping("/user/read")
 	@ResponseBody
+	//@PreAuthorize("hasAnyRole('ROLE_USER','ROLE_ADMIN')")
 	public String userPage() {
-		return "USER AND ADMIN CAN READ THE DATA";
+		return "simple user url link";
 	}
 	
 	@GetMapping("/delete")
 	@ResponseBody
-	@PreAuthorize("hasRole('ROLE_ADMIN')")
+	//@PreAuthorize("hasRole('ROLE_ADMIN')")
 	public String adminPage() {
 		return "ONLY ADMIN CAN DELETE THE DATA";
 	}
 	
 	@GetMapping("/update")
 	@ResponseBody
-	@PreAuthorize("hasRole('abc')")
+	//@PreAuthorize("hasRole('ROLE_ADMIN')")
 	public String updateUsers() {
-		return "Details Updated with ADMIN Role";
+		return "Details Updated with ADMIN and HR Role";
 	}
 	
-	@GetMapping("/onboard")
+	@GetMapping("/user/hr/onboard")
 	@ResponseBody
-	@PreAuthorize("hasRole('HR')")
+	//@PreAuthorize("hasAnyRole('ROLE_HR', 'ROLE_EMPLOYEE')")
 	public String updateHR() {
-		return "Onboard Employee with HR";
+		return "Omboarded Employee with HR Role";
 	}
-	
 }

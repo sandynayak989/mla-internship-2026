@@ -19,34 +19,62 @@ public class WebSecurityConfig {
 	
 	@Bean
 	protected UserDetailsService userDetailsService() {
-		UserDetails user = User.builder().username("USER").password(passwordEncoder().encode("abc123")).roles("USER").build();
+		UserDetails user = User.builder()
+							.username("USER")
+							.password(passwordEncoder().encode("abc123"))
+							.roles("USER")
+							.build();
+		UserDetails admin = User.builder()
+							.username("ADMIN")
+							.password(passwordEncoder().encode("java"))
+							.roles("ADMIN","USER")
+							.build();
 		
-		UserDetails admin = User.builder().username("ADMIN").password(passwordEncoder().encode("java")).roles("ADMIN","USER").build();
+		UserDetails hr = User.builder()
+				.username("HR")
+				.password(passwordEncoder().encode("java"))
+				.roles("HR")
+				.build();
 		
-		UserDetails hr = User.builder().username("hiring").password(passwordEncoder().encode("java")).roles("HR","Employee").build();
-		
-		UserDetails emp = User.builder().username("employee").password(passwordEncoder().encode("java")).roles("Employee").build();
+		UserDetails emp = User.builder()
+				.username("employee")
+				.password(passwordEncoder().encode("java"))
+				.roles("HR","EMPLOYEE")
+				.build();
 		
 		return new InMemoryUserDetailsManager(user,admin,hr,emp);
 	}
 	
 	@Bean
 	protected PasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
+		return new BCryptPasswordEncoder(); 
 	}
 	
 	@Bean
 	protected SecurityFilterChain filterChain(HttpSecurity http) {
-		return http.csrf(AbstractHttpConfigurer :: disable)
-				.authorizeHttpRequests(request -> request
-				.requestMatchers("/login").permitAll()
-				.requestMatchers("/**").authenticated())
+		return http
+				.csrf(AbstractHttpConfigurer :: disable)
+				.authorizeHttpRequests(
+						request -> request.requestMatchers("/login")
+						.permitAll()
+						.requestMatchers("/")
+						.hasAnyAuthority("ROLE_ADMIN","ROLE_USER", "ROLE_HR","ROLE_EMPLOYEE")
+						.requestMatchers("/user/read/")
+						.hasAnyAuthority("ROLE_USER","ROLE_ADMIN")
+						.requestMatchers("/user/hr/**")
+						.hasAnyAuthority("ROLE_HR","ROLE_EMPLOYEE","ROLE_ADMIN")
+						.anyRequest()
+						.authenticated()
+						)
 				.formLogin(form -> form.loginPage("/login")
-				.defaultSuccessUrl("/").failureUrl("/login?error=true").permitAll())
+						.defaultSuccessUrl("/")
+						.failureUrl("/login?error=true")
+						.permitAll()
+						)
 				.logout(config -> config.logoutUrl("/logout")
-				.logoutSuccessUrl("/login")
-				).build();
+						.logoutSuccessUrl("/login")
+						)
+				.build();
+				
 	}
-	
-	
 }
